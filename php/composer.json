@@ -1,0 +1,26 @@
+{
+    "name": "queren/aratech",
+    "description": "Prueba técnica Aratech",
+    "type": "project",
+    "scripts": {
+		"test": "vendor/bin/phpunit"
+	},
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Queren\\Aratech\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "phpServer": {
+    "port": 3000,
+    "directory": "public",
+    "browser": "chrome",
+    "router": ""
+}
+}

@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+}
+
+#taskForm{
+    margin-top: 5em;
+}
+
+#taskForm form{
+    margin-top: 2.5em;
+}
+
+#tasksList{
+    margin-top: 5em;
+}
+
+#taskTable{
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.removeButton{
+    border-radius: 1em;
+}
+.errorMsg {
+    display: flex;
+    justify-content: center;
+    color: #dc3545;
+}
+
+.errorMsg div{
+    width: 60%;
+    text-align: center;
+}
