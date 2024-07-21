@@ -3,11 +3,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['action']) && $_POST['action'] === 'agregar') {
         $areInputsValid = inputsAreValid($_POST);
         if($areInputsValid){
+            $taskId= file_get_contents('./js/taskId.txt');
             $newTask = [
-                'id' => uniqid(),
+                'id' => $taskId,
                 'title' => $_POST['title'],
                 'description' => $_POST['description']
             ];
+            file_put_contents('./js/taskId.txt',++$taskId);
+
             $tasks = getTasks();
             array_push($tasks, $newTask);
             file_put_contents('./js/datos.json', json_encode($tasks, JSON_PRETTY_PRINT));
