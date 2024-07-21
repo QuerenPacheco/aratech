@@ -14,16 +14,31 @@
 
 <body>
     <div class="container">
-        <h1 class="my-4">Lista de Tareas</h1>
-        <div id="errorMsg" class="mb-4"></div>
-        <form id="taskForm" class="form-inline mb-4">
-            <div class="form-group mr-2">
+        <h1 class="my-4 text-center">Lista de Tareas</h1>
+        <div id="taskForm">
+            <h2>Agregar tarea</h2>
+            <div id="errorMsg" class="mb-4"></div>
+            <form class="mb-4">
                 <input type="text" id="title" class="form-control" placeholder="Título de la tarea" required>
-            </div>
-            <button type="button" id="addButton" class="btn btn-primary">Agregar Tarea</button>
-        </form>
+                <button type="button" id="addButton" class="btn btn-primary mt-3">Agregar Tarea</button>
+            </form>
+        </div>
 
-        <div id="tasksList"></div>
+
+        <div id="tasksList">
+            <h2>Tareas</h2>
+            <table id="taskTable" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Título</td>
+                        <th scope="col">Descripción</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </body>

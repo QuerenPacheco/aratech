@@ -1,7 +1,13 @@
-.task{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#taskForm, #tasksList{
+    margin-top: 5em;
+}
+
+#taskForm h2, #tasksList h2{
+    margin-bottom: 1.5em;
+}
+
+#taskTable{
+    text-align: center;
 }
 
 .removeButton{
@@ -9,4 +15,10 @@
 }
 .errorMsg {
     color: #dc3545;
+}
+
+#noContentMsg{
+    margin-bottom: 2em;
+    padding: 2em;
+    text-align: center;
 }
