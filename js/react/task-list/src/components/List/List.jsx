@@ -3,7 +3,6 @@ import styles from './css/List.module.css';
 const List = ({ data, actions }) => {
     return (
         <div className={styles.subcontainer}>
-            <h2 className={styles.subtitle}>Tareas</h2>
             <table className="table">
                 <thead>
                     <tr>
