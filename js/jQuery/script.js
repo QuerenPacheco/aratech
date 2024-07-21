@@ -31,7 +31,7 @@ function addTask() {
         $("#title").val('');
     } else {
         const message = "Debe rellenar el campo";
-        $("#errorMsg").html('<div class="alert alert-danger" role="alert">' + message + '</div>');
+        $("#errorMsg").html('<div class="alert alert-danger text-center" role="alert">' + message + '</div>');
     }
 
 }
