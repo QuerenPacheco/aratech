@@ -18,7 +18,7 @@ const List = ({ data, actions }) => {
                                 <td>{object}</td>
                                 <td>
                                     {actions.map((action, j) =>
-                                        <button key={j} onClick={() => action.onClick(i)}>{action.name}</button>
+                                        <button className="btn btn-danger btn-sm" key={j} onClick={() => action.onClick(i)}>{action.name}</button>
                                     )}
                                 </td>
                             </tr>

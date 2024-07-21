@@ -24,7 +24,7 @@ const ListPage = () => {
             
             <div id="taskList">
                 {data.length ?
-                    <List data={data} actions={[{ 'name': 'borrar', 'onClick': removeElement }]} /> :
+                    <List data={data} actions={[{ 'name': 'Eliminar', 'onClick': removeElement }]} /> :
                     <p className='text-center mt-2'>No hay tareas disponibles</p>}
             </div>
             
