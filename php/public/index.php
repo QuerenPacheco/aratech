@@ -19,7 +19,7 @@
             <?php
             if (isset($_GET['valid']) && $_GET['valid'] == 'false') {
             ?>
-                <div id="errorMsg" class="mb-4">
+                <div id="errorMsg" class="mb-4 text-center">
                     <div class="alert alert-danger" role="alert">Debe de rellenar todos los campos</div>
                 </div>
 
@@ -29,11 +29,11 @@
             <form action="gestionTareas.php" method="post" class="mb-4">
                 <input type="hidden" name="action" value="agregar">
                 <div class="form-group mr-3">
-                    <input type="text" name="title" class="form-control form-control-lg" placeholder="Título:" require>
+                    <input type="text" name="title" class="form-control form-control-lg" placeholder="Título" require>
                 </div>
 
                 <div class="form-group mr-3">
-                    <textarea name="description" rows="3" class="form-control form-control-lg" placeholder="Descripción:" require></textarea>
+                    <textarea name="description" rows="3" class="form-control form-control-lg" placeholder="Descripción" require></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Agregar Tarea</button>
