@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import List from './../../components/List';
-import InputButton from '../../components/InputButton';
+import List from './../../components/List/List';
+import InputButton from '../../components/InputButton/InputButton';
+import {Container} from 'react-bootstrap';
 
 const ListPage = () => {
     const [data, setData] = useState([]);
@@ -17,14 +18,18 @@ const ListPage = () => {
     }
 
     return (
-        <>
+        <Container>
+            <h1 className="my-4 text-center">Lista de Tareas</h1>
             <InputButton onClick={addElement} buttonText={'Agregar tarea'} />
-            {data.length ?
-                <List data={data} actions={[{ 'name': 'borrar', 'onClick': removeElement }]} /> :
-                <p>No hay tareas disponibles</p>}
-
-        </>
-
+            
+            <div id="taskList">
+                {data.length ?
+                    <List data={data} actions={[{ 'name': 'borrar', 'onClick': removeElement }]} /> :
+                    <p className='text-center mt-2'>No hay tareas disponibles</p>}
+            </div>
+            
+        </Container>
+        
     );
 }
 

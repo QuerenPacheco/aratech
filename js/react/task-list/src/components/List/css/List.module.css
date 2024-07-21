@@ -1,0 +1,12 @@
+.subcontainer{
+    width: 60%;
+    margin-top: 5em;
+}
+
+.subtitle{
+    margin-bottom: 1em;
+}
+
+.subcontainer table{
+    text-align: center;
+}
