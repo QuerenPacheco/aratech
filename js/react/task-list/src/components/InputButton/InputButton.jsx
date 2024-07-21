@@ -26,7 +26,7 @@ const InputButton = ({ onClick, buttonText }) => {
         <div className={styles.subcontainer}>
             <h2 className={styles.subtitle}>Agregar nueva tarea</h2>
             <Form className="form-inline">
-            <Form.Control type="text" value={inputVal} onChange={handleChange} isInvalid={!!error}/>
+            <Form.Control type="text" value={inputVal} onChange={handleChange} isInvalid={!!error} placeholder="Título de la tarea"/>
             <Form.Control.Feedback type="invalid">
                 {error}
             </Form.Control.Feedback>
